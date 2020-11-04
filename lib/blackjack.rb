@@ -1,3 +1,5 @@
+require 'pry'
+
 def welcome
   puts "Welcome to the Blackjack Table"
 end
@@ -54,6 +56,7 @@ end
 def runner
   welcome
   sum = initial_round
+  binding.pry
   until sum > 21
     sum = hit? (sum)
   end
