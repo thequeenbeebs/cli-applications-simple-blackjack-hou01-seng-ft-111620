@@ -58,7 +58,7 @@ def runner
   sum = initial_round
   until sum > 21
     sum = hit? (sum)
-    binding.pry
   end
+  binding.pry
   end_game (sum)
 end
